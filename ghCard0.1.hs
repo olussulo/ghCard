@@ -1,4 +1,3 @@
--- how to import System.Random
 --ghcard.hs
 module GhCard where
   import System.Random
