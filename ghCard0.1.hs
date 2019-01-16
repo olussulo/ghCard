@@ -1,5 +1,7 @@
+-- how to import System.Random
 --ghcard.hs
 module GhCard where
+  import System.Random
   data Card = Zero | Plus1 | Plus2 | Minus1 | Minus2 | Null | Crit deriving Show
 --initial att. mod deck
   deck :: [Card]
@@ -13,5 +15,11 @@ module GhCard where
 
 -- takes a card from the deck and puts it into the discard
   draw :: [Card] -> Card -> [Card]
-  draw = 
--- find a way to take a random item from the list
+  draw = undefined
+
+-- viilaa lisää
+  defineDraw :: (IO Int)
+  defineDraw = (randomRIO (0, deckSize))
+
+  deckSize :: Int
+  deckSize = length deck
