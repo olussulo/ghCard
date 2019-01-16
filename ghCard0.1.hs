@@ -17,7 +17,7 @@ module GhCard where
   draw :: [Card] -> Card -> [Card]
   draw = undefined
 
--- viilaa lisää
+-- generates a random number between 0 and the current size of the deck string
   defineDraw :: (IO Int)
   defineDraw = (randomRIO (0, deckSize))
 
